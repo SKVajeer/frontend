@@ -1,0 +1,35 @@
+.Header {
+  background-color: #000;
+  border-radius: 13px;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  height: 80px;
+  padding: 0 30px;
+  font-size: 1.2rem;
+  display: flex;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.logo {
+  padding-top: 5px;
+}
+
+.search {
+  border-radius: 13px;
+  width: 30%;
+}
+
+#search_type {
+  width: 70%;
+  height: 25px;
+}
+
+#btn {
+  height: 30px;
+}
+
+/*# sourceMappingURL=index.b2625c6b.css.map */

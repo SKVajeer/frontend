@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Country Selector</title>
+</head>
+<body>
+   
+  <select id="Selectcountry">
+    <option>countries</option>
+    <option value="USA">United States</option>
+    <option value="Canada">Canada</option>
+    <option value="UK">United Kingdom</option>
+    <option value="France">France</option>
+    <option value="Germany">Germany</option>
+    <option value="portugal">portugal</option>
+    <option value="india">india</option>
+    <option value="africa">africa</option>
+    <option value="england">england</option>
+    <option value="newzealand">newzealand</option>
+    <option value="Australia">Australia</option>
+    <option value="argentina">argentina</option>
+    <option value="Switzerland">Switzerland</option>
+    <option value="srilanka">srilanka</option>
+    <option value="Netherlands">Netherlands</option>
+    <option value="bangladesh">bangladesh</option>
+    <option value="Denmark">Denmark</option>
+    <!-- Add more countries as needed -->
+  </select>
+  <br>
+   
+  <input type="text" id="country">
+  <ul id="list"></ul>
+  
+  <script>
+    // Get references to the select, input, and ul elements
+    var countrySelector = document.getElementById("Selectcountry");
+    var countryInput = document.getElementById("country");
+    var countryList = document.getElementById("list");
+
+    // Add an event listener to the input field
+    countryInput.addEventListener("input", function () {
+      const inputText = countryInput.value.toLowerCase();
+
+      // Clear the existing list
+      countryList.innerHTML = '';
+
+      // Loop through the options in the select element
+      for (let i = 0; i < countrySelector.options.length; i++) {
+        var option = countrySelector.options[i];
+        var optionText = option.text.toLowerCase();
+
+        // Check if the input text matches the beginning of any option text
+        if (optionText.startsWith(inputText)) {
+          // Create a new list item for the matching country
+          var listItem = document.createElement("li");
+          listItem.textContent = option.text;
+          countryList.appendChild(listItem);
+        }
+      }
+    });
+  </script>
+</body>
+</html>
