@@ -1,0 +1,36 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "first react app",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SKVajeer/react-assignment.git"
+  },
+  "keywords": [
+    "react",
+    "demo",
+    "app",
+    "npm"
+  ],
+  "author": "vajeer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SKVajeer/react-assignment/issues"
+  },
+  "homepage": "https://github.com/SKVajeer/react-assignment#readme",
+  "devDependencies": {
+    "parcel": "^2.10.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "npm": "^10.2.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
